@@ -41,7 +41,7 @@ func (l *Loader) PathPattern() *regexp.Regexp {
 	return regexp.MustCompile(configPathRegex)
 }
 
-func (l *Loader) Register(path string, data []byte) {
+func (l *Loader) Preload(path string, data []byte) {
 	l.extraFile = append(l.extraFile, extraFileEntry{path: path, data: data})
 }
 
