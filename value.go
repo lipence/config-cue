@@ -119,7 +119,7 @@ func (cfg *cueValue) Lookup(path ...string) (config.Value, bool) {
 	return &cueValue{real: cfgVal}, true
 }
 
-func (cfg *cueValue) Json() (json []byte, err error) {
+func (cfg *cueValue) Marshal() (json []byte, err error) {
 	if json, err = cfg.real.MarshalJSON(); err != nil {
 		return nil, readErrors(err)
 	}

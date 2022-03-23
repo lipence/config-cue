@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	cuelang.org/go v0.4.2
-	github.com/lipence/config v0.0.3
+	github.com/lipence/config v0.0.4
 )
 
 require (
